@@ -1,0 +1,12 @@
+#include <iostream>
+#define LIMIT 5
+using namespace std ;
+int main(){
+    // this comment and program is written by akshit mangotra to avoid lexical analyzer for checking comment
+    int A , B ;
+    cin >> A >> B;
+    cout << A * B ; 
+}
+
+
+
