@@ -97,7 +97,6 @@ int main()
                 cout<<"\t Token   No :"<<count<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25) << match->second.second  <<setw(18)<<" ,  POINTER TO SYMBOL TABLE    "<<endl;
                 fout<<"\t Token   No :"<<count<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25) << match->second.second  <<setw(18)<<" ,  POINTER TO SYMBOL TABLE    "<<endl;
             }
-            
             count++;
             }
 
