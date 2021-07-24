@@ -1,36 +1,36 @@
-Token (  #  -------> Special Symbol  )
-Token (  include  -------> Pre-Processor Directive  )
-Token (  <  -------> Operator , LSHFT  )
-Token (  iostream  -------> Library  )
-Token (  >  -------> Operator , RSHFT  )
-Token (  #  -------> Special Symbol  )
-Token (  define  -------> Pre-Processor Directive  )
-Token (  'LIMIT'  -------> Variable ,  POINTER TO SYMBOL TABLE )
-Token (  5  -------> Integer  )
-Token (  using  -------> Keywords  )
-Token (  namespace  -------> Keywords  )
-Token (  std  -------> Keywords  )
-Token (  ;  -------> Special Symbol  )
-Token (  int  -------> Keywords  )
-Token (  main  -------> Keywords  )
-Token (  (  -------> Special Symbol  )
-Token (  )  -------> Special Symbol  )
-Token (  {  -------> Special Symbol  )
-Token (  int  -------> Keywords  )
-Token (  'A'  -------> Variable ,  POINTER TO SYMBOL TABLE )
-Token (  ,  -------> Special Symbol  )
-Token (  'B'  -------> Variable ,  POINTER TO SYMBOL TABLE )
-Token (  ;  -------> Special Symbol  )
-Token (  cin  -------> Keywords  )
-Token (  >>  -------> Operator , INS  )
-Token (  'A'  -------> Variable ,  POINTER TO SYMBOL TABLE )
-Token (  >>  -------> Operator , INS  )
-Token (  'B'  -------> Variable ,  POINTER TO SYMBOL TABLE )
-Token (  ;  -------> Special Symbol  )
-Token (  cout  -------> Keywords  )
-Token (  <<  -------> Operator , EXTR  )
-Token (  'A'  -------> Variable ,  POINTER TO SYMBOL TABLE )
-Token (  *  -------> Operator , MUL  )
-Token (  'B'  -------> Variable ,  POINTER TO SYMBOL TABLE )
-Token (  ;  -------> Special Symbol  )
-Token (  }  -------> Special Symbol  )
+	 Token   No :01  |            #  ------->  |           Special Symbol    
+	 Token   No :02  |      include  ------->  |  Pre-Processor Directive    
+	 Token   No :03  |            <  ------->  |                 Operator , LSHFT    
+	 Token   No :04  |     iostream  ------->  |                  Library    
+	 Token   No :05  |            >  ------->  |                 Operator , RSHFT    
+	 Token   No :06  |            #  ------->  |           Special Symbol    
+	 Token   No :07  |       define  ------->  |  Pre-Processor Directive    
+	 Token   No :08  |        LIMIT  ------->  |                 Variable ,  POINTER TO SYMBOL TABLE    
+	 Token   No :09  |            5  ------->  |                  Integer    
+	 Token   No :10  |        using  ------->  |                 Keywords    
+	 Token   No :11  |    namespace  ------->  |                 Keywords    
+	 Token   No :12  |          std  ------->  |                 Keywords    
+	 Token   No :13  |            ;  ------->  |           Special Symbol    
+	 Token   No :14  |          int  ------->  |                 Keywords    
+	 Token   No :15  |         main  ------->  |                 Keywords    
+	 Token   No :16  |            (  ------->  |           Special Symbol    
+	 Token   No :17  |            )  ------->  |           Special Symbol    
+	 Token   No :18  |            {  ------->  |           Special Symbol    
+	 Token   No :19  |          int  ------->  |                 Keywords    
+	 Token   No :20  |            A  ------->  |                 Variable ,  POINTER TO SYMBOL TABLE    
+	 Token   No :21  |            ,  ------->  |           Special Symbol    
+	 Token   No :22  |            B  ------->  |                 Variable ,  POINTER TO SYMBOL TABLE    
+	 Token   No :23  |            ;  ------->  |           Special Symbol    
+	 Token   No :24  |          cin  ------->  |                 Keywords    
+	 Token   No :25  |           >>  ------->  |                 Operator , INS    
+	 Token   No :26  |            A  ------->  |                 Variable ,  POINTER TO SYMBOL TABLE    
+	 Token   No :27  |           >>  ------->  |                 Operator , INS    
+	 Token   No :28  |            B  ------->  |                 Variable ,  POINTER TO SYMBOL TABLE    
+	 Token   No :29  |            ;  ------->  |           Special Symbol    
+	 Token   No :30  |         cout  ------->  |                 Keywords    
+	 Token   No :31  |           <<  ------->  |                 Operator , EXTR    
+	 Token   No :32  |            A  ------->  |                 Variable ,  POINTER TO SYMBOL TABLE    
+	 Token   No :33  |            *  ------->  |                 Operator , MUL    
+	 Token   No :34  |            B  ------->  |                 Variable ,  POINTER TO SYMBOL TABLE    
+	 Token   No :35  |            ;  ------->  |           Special Symbol    
+	 Token   No :36  |            }  ------->  |           Special Symbol    

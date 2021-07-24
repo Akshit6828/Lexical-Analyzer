@@ -47,11 +47,20 @@ string tell_Lexeme(string op){
 int main()
 {
     ofstream fout;
+    cout<<endl<<endl<<endl;
+    cout.fill(' ');
+    cout.width(100);
     fout.open("OutputFile");
     char c;
-    fstream fin("SourceCode.txt", fstream::in);
+    string filename;
+    
+
+    cout<<"ENTER THE SOURCE CODE FILE NAME: Example \"abc.txt\" \n";
+    cin>>filename;
+    fstream fin(filename, fstream::in);
     string str;
     //Fetching Source Code in String type 'str'
+    if(fin.is_open()){
     while(fin>> noskipws>>c)
         str=str+c;
 
@@ -63,20 +72,98 @@ int main()
     map< size_t, pair<string,string> > lang_matches = Match_Language(patterns,str);
 
     // Writing matches in File ignoring 'spaces' and '\n'.
+    int count = 1;
+    cout<<"\t\t\t\t-------------------------------------------------------------------------------------------------- \n";
+    cout.width(40);
+    cout<<"\t  TOKEN NUMBER"<<setw(10)<<"           IDENTIFIER "<< " "<< "            "<<setw(20)<<" PATTERN \n";
+    cout.fill(' ');
+    cout.width(40);
+    
+    cout<<"\t\t\t\t-------------------------------------------------------------------------------------------------- \n\n\n";
     for ( auto match = lang_matches.begin(); match != lang_matches.end(); ++match ){
 
         if(!(match->second.first==" ")&&!(match->second.first=="//")){
-            if(match->second.second=="Variable"||match->second.second=="Identifier")
-            fout<<"Token (  '"<< match->second.first << "' " <<" -------> "<< match->second.second  <<" ,  POINTER TO SYMBOL TABLE )"<<endl;
+
+            if(match->second.second=="Variable"||match->second.second=="Identifier"){
+        
+            cout.width(40);
+            if(count<10){
+                string double_digits = to_string(count);
+                double_digits = "0"+double_digits;
+                cout<<"\t Token   No :"<<double_digits<< "  |   "<<setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second  <<setw(18)<<" ,  POINTER TO SYMBOL TABLE    "<<endl;
+                fout<<"\t Token   No :"<<double_digits<< "  |   "<<setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second  <<setw(18)<<" ,  POINTER TO SYMBOL TABLE    "<<endl;
+            }
+            else{
+                cout<<"\t Token   No :"<<count<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25) << match->second.second  <<setw(18)<<" ,  POINTER TO SYMBOL TABLE    "<<endl;
+                fout<<"\t Token   No :"<<count<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25) << match->second.second  <<setw(18)<<" ,  POINTER TO SYMBOL TABLE    "<<endl;
+            }
+            
+            count++;
+            }
+
             else{
                 if(match->second.second=="Operator"){
+                cout.width(40);
                 string op=tell_Lexeme(match->second.first);
-                fout<<"Token (  "<< match->second.first << " " <<" -------> "<< match->second.second<<" , "<<op<<"  )"  <<endl;    
+                 if(count<10){
+                string double_digits = to_string(count);
+                double_digits = "0"+double_digits;
+                cout<<"\t Token   No :"<<double_digits<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second<<" , "<<op<<"    "  <<endl;
+                fout<<"\t Token   No :"<<double_digits<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second<<" , "<<op<<"    "  <<endl;
+                count++;
                 }
-                else
-                fout<<"Token (  "<< match->second.first << " " <<" -------> "<< match->second.second<<"  )"  <<endl;
-            } 
+                else{
+                    cout<<"\t Token   No :"<<count<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second<<" , "<<op<<"    "  <<endl;
+                    fout<<"\t Token   No :"<<count<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second<<" , "<<op<<"    "  <<endl;
+                count++;
+                }
+                
+                }
+                else{
+                    cout.width(40);
+                    if(count<10){
+                    string double_digits = to_string(count);
+                    double_digits = "0"+double_digits;
+                    cout<<"\t Token   No :"<<double_digits<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second<<"    "  <<endl;    
+                    fout<<"\t Token   No :"<<double_digits<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second<<"    "  <<endl;    
+                    count++;
+                    }
+                    else{
+                         cout<<"\t Token   No :"<<count<< "  |   "<<setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second<<"    "  <<endl;
+                         fout<<"\t Token   No :"<<count<< "  |   "<<setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second<<"    "  <<endl;
+                         count++;    
+                    }
+
+                }
+                
+            }
         }
+    }
+    
+    int command=2;
+    while(command==2){
+    cout.fill(' ');
+    cout.width(40);
+    cout<<"\n\n\t PRESS 1 TO EXIT \n\n\t PLEASE NOTE AN OUTPUT FILE WILL BE GENERATED IN THE SAME FOLDER AS `Output.txt` ";
+    cin.width(40);
+    cin>>command;
+    if(command==1)
+    break;
+    else{
+        cout.fill(' ');
+        cout.width(40);
+        cout<<"Please enter correct number.";
+        cin.width(10);
+        cin>>command;
+    }
+    }
+
+    }
+
+    else{
+        cout.fill(' ');
+    cout.width(40);
+    cout<<"\n FILE NOT FOUND!\n\n";   
     }
     return 0;
 }
