@@ -22,6 +22,7 @@ Example of tokens:
 1. Clone the project using command:  `git clone https://github.com/Akshit6828/Lexical-Analyzer.git `
 2. Change directory to Lexical-Analyzer using command: `cd Lexical-Analyzer`.
 3. Make a text file in this folder and write source code in C++.
+   3.1 Try the source code written written [here:](#sample-source-code-mysourcecodetxt)
 4. Open `Lex.exe` file by double clicking on the file.
 5. You'll see all associated tokens from the source code.
    
@@ -37,4 +38,19 @@ Example of tokens:
 - [x] **Library**: `iostream`, `studio`, `string`
 - [x] **Operators**: `*`, `+`, `>>`, `<<`,`>`,`<`
 - [x] **Numbers/Integers**:  `0 to 9`.
-- [x] **Identifies/ Variables**: **All alphabetic strings** `except` the `keywords, numbers, Pre-processor directive and library strings`.
+- [x] **Identifies/ Variables**: `All alphabetic strings except the keywords, numbers, Pre-processor directive and library strings`.
+
+### Sample Source Code (MySourceCode.txt):
+```
+#include <iostream>
+#define LIMIT 5
+using namespace std ;
+int main(){
+    // this comment is written by akshit mangotra for lexical analyzer to avoid reading the comments
+    int A , B ;
+    cin >> A >> B;
+    cout << A * B ; 
+}
+```
+
+### Output Screen:
