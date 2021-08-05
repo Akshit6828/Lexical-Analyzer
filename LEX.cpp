@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 #include <regex>
+#include<time.h>
 #include <iterator>
+#include<windows.h>
 #define deb(x) cout<<#x<<" = "<<x<<endl
 
 using namespace std;
@@ -75,11 +77,13 @@ int main()
     int count = 1;
     cout<<"\t\t\t\t-------------------------------------------------------------------------------------------------- \n";
     cout.width(40);
-    cout<<"\t  TOKEN NUMBER"<<setw(10)<<"           IDENTIFIER "<< " "<< "            "<<setw(20)<<" PATTERN \n";
+    cout<<"\t        NUMBER"<<setw(10)<<"              TOKEN "<< " "<< "            "<<setw(20)<<" PATTERN \n";
     cout.fill(' ');
     cout.width(40);
     
     cout<<"\t\t\t\t-------------------------------------------------------------------------------------------------- \n\n\n";
+    //cout<<"\t\t\t\t                              PROCESSING SOURCE CODE.......                                        \n\n\n";
+    //Sleep(5000);
     for ( auto match = lang_matches.begin(); match != lang_matches.end(); ++match ){
 
         if(!(match->second.first==" ")&&!(match->second.first=="//")){
@@ -92,10 +96,12 @@ int main()
                 double_digits = "0"+double_digits;
                 cout<<"\t Token   No :"<<double_digits<< "  |   "<<setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second  <<setw(18)<<" ,  POINTER TO SYMBOL TABLE    "<<endl;
                 fout<<"\t Token   No :"<<double_digits<< "  |   "<<setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second  <<setw(18)<<" ,  POINTER TO SYMBOL TABLE    "<<endl;
+                Sleep(1500);
             }
             else{
                 cout<<"\t Token   No :"<<count<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25) << match->second.second  <<setw(18)<<" ,  POINTER TO SYMBOL TABLE    "<<endl;
                 fout<<"\t Token   No :"<<count<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25) << match->second.second  <<setw(18)<<" ,  POINTER TO SYMBOL TABLE    "<<endl;
+                Sleep(1500);
             }
             count++;
             }
@@ -114,7 +120,8 @@ int main()
                 else{
                     cout<<"\t Token   No :"<<count<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second<<" , "<<op<<"    "  <<endl;
                     fout<<"\t Token   No :"<<count<< "  |   "<< setw(10)<< match->second.first << " " <<" ------->  |"<< setw(25)<< match->second.second<<" , "<<op<<"    "  <<endl;
-                count++;
+                    Sleep(1500);
+                    count++;
                 }
                 
                 }
@@ -139,24 +146,27 @@ int main()
         }
     }
     
-    int command=2;
-    while(command==2){
+    string command= " ";
+    
+    while(command !="EXIT"){
     cout.fill(' ');
     cout.width(40);
-    cout<<"\n\n\t PRESS 1 TO EXIT \n\n\t PLEASE NOTE AN OUTPUT FILE WILL BE GENERATED IN THE SAME FOLDER AS `Output.txt` ";
+    cout<<"\n\n\t PRESS TYPE `EXIT` TO CLOSE WINDOW.\n\t NOTE: AN OUTPUT FILE WILL BE GENERATED IN THE SAME FOLDER AS `Output.txt` \n";
     cin.width(40);
     cin>>command;
-    if(command==1)
+
+    if(command == "exit"||command == "EXIT"|| command == "Exit")
     break;
+
     else{
         cout.fill(' ');
         cout.width(40);
-        cout<<"Please enter correct number.";
+        cout<<"Please enter correct word.";
         cin.width(10);
         cin>>command;
     }
-    }
 
+    }
     }
 
     else{

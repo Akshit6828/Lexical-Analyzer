@@ -18,19 +18,3 @@
 	 Token   No :18  |            {  ------->  |           Special Symbol    
 	 Token   No :19  |          int  ------->  |                 Keywords    
 	 Token   No :20  |            A  ------->  |                 Variable ,  POINTER TO SYMBOL TABLE    
-	 Token   No :21  |            ,  ------->  |           Special Symbol    
-	 Token   No :22  |            B  ------->  |                 Variable ,  POINTER TO SYMBOL TABLE    
-	 Token   No :23  |            ;  ------->  |           Special Symbol    
-	 Token   No :24  |          cin  ------->  |                 Keywords    
-	 Token   No :25  |           >>  ------->  |                 Operator , INS    
-	 Token   No :26  |            A  ------->  |                 Variable ,  POINTER TO SYMBOL TABLE    
-	 Token   No :27  |           >>  ------->  |                 Operator , INS    
-	 Token   No :28  |            B  ------->  |                 Variable ,  POINTER TO SYMBOL TABLE    
-	 Token   No :29  |            ;  ------->  |           Special Symbol    
-	 Token   No :30  |         cout  ------->  |                 Keywords    
-	 Token   No :31  |           <<  ------->  |                 Operator , EXTR    
-	 Token   No :32  |            A  ------->  |                 Variable ,  POINTER TO SYMBOL TABLE    
-	 Token   No :33  |            *  ------->  |                 Operator , MUL    
-	 Token   No :34  |            B  ------->  |                 Variable ,  POINTER TO SYMBOL TABLE    
-	 Token   No :35  |            ;  ------->  |           Special Symbol    
-	 Token   No :36  |            }  ------->  |           Special Symbol    
