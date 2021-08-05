@@ -6,7 +6,7 @@
 - [Tokens:](#tokens)
 - [How Lexical Analyzer functions](#how-lexical-analyzer-functions)
 - [How to Run this Project:](#how-to-run-this-project)
-- [ASSUMPTIONS:](#assumptions)
+- [Assumptions for Subset of C++:](#assumptions)
 - [Sample Source Code:](#sample-source-code)
 - [Screen Shots:](#screen-shots)
 
