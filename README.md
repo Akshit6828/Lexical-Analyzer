@@ -2,13 +2,17 @@
 
 <h2> Table of Contents: </h2>
 
-- [About the Project](#about-this-project)
-- [What are tokens?](#tokens)
-- [How Lexical Analyzer Works](#how-lexical-analyzer-functions)
-- [How to Run this Project](#how-to-run-this-project)
-- [Assumptions in Subset of C++](#assumptions)
-- [Sample Source Code](#sample-source-code)
-- [Output/Screenshots]:(#screenshots)
+- [About this project:](#about-this-project)
+- [Tokens:](#tokens)
+- [How Lexical Analyzer functions](#how-lexical-analyzer-functions)
+- [How to Run this Project:](#how-to-run-this-project)
+- [ASSUMPTIONS:](#assumptions)
+    - [While designing the LexicalAnalyzer, I have assumed the following assumptions for my Language:](#while-designing-the-lexicalanalyzer-i-have-assumed-the-following-assumptions-for-my-language)
+  - [Sample Source Code:](#sample-source-code)
+  - [Screen Shots:](#screen-shots)
+    - [MySourceCode.txt](#mysourcecodetxt)
+    - [Output(Console)](#outputconsole)
+    - [OutputFile.txt](#outputfiletxt)
 
 ## About this project:
 This project is a lexical analyzer generator written in C++. Lexical Analysis is the first phase of the compiler also known as a `scanner`. It converts the High level input program into a sequence of Tokens.
@@ -68,4 +72,16 @@ int main(){
 
 ### Screen Shots:
 
+#### MySourceCode.txt
 
+<img src="Media%20Resources/mysourcecode.png " width="500"><br><br>
+
+#### Output(Console)
+
+<img src="Media%20Resources/outputconsole.png " width="500"><br><br>
+
+#### OutputFile.txt
+
+<img src="Media%20Resources/outputfile.png " width="650">
+
+    
