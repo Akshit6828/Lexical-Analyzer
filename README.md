@@ -1,7 +1,19 @@
 <h1 align ="center"> Lexical Analyzer for C++ written in C++.</h1>
 
+<h2> Table of Contents: </h2>
+
+- [About the Project](#about-this-project)
+- [What are tokens?](#tokens)
+- [How Lexical Analyzer Works](#how-lexical-analyzer-functions)
+- [How to Run this Project](#how-to-run-this-project)
+- [Assumptions in Subset of C++](#assumptions)
+- [Sample Source Code](#sample-source-code)
+- [Output/Screenshots]:(#screenshots)
+
 ## About this project:
 This project is a lexical analyzer generator written in C++. Lexical Analysis is the first phase of the compiler also known as a `scanner`. It converts the High level input program into a sequence of Tokens.
+
+<img src="Media%20Resources/outputgif.gif" width="650">
 
 ## Tokens:
 A lexical token is a sequence of characters that can be treated as a unit in the grammar of the programming languages.
@@ -40,7 +52,8 @@ Example of tokens:
 - [x] **Numbers/Integers**:  `0 to 9`.
 - [x] **Identifies/ Variables**: `All alphabetic strings except the keywords, numbers, Pre-processor directive and library strings`.
 
-### Sample Source Code (MySourceCode.txt):
+### Sample Source Code:
+> MySourceCode.txt
 ```
 #include <iostream>
 #define LIMIT 5
@@ -52,5 +65,7 @@ int main(){
     cout << A * B ; 
 }
 ```
+
+### Screen Shots:
 
 
