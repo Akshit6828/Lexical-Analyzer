@@ -35,7 +35,7 @@ Example of tokens:
 1. Clone the project using command:  `git clone https://github.com/Akshit6828/Lexical-Analyzer.git `
 2. Change directory to Lexical-Analyzer using command: `cd Lexical-Analyzer`.
 3. Make a text file in this folder and write source code in C++.
-   3.1 Try the source code written written [here:](#sample-source-code-mysourcecode.txt)
+   3.1 Try the source code written written [here:](#sample-source-code:)
 4. Open `Lex.exe` file by double clicking on the file.
 5. You'll see all associated tokens from the source code.
    
